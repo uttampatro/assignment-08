@@ -1,11 +1,25 @@
-.homeIndex{
-    padding: 20px;
+.homeIndex {
+  padding: 20px;
 }
 
 .home_footer {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 150px;
-  }
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 150px;
+}
+.homeBody {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
+}
+.homeBodyContent{
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin: 10px;
+    width: 130px;
+    height: 100px;
+}
