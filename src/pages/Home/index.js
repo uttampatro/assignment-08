@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
@@ -40,10 +41,39 @@ function Home() {
         {posts.map((post) => {
           return (
             <div className="homeBodyContent">
-              <h5>{post?.title}</h5>
-              <p style={{ fontSize: "10px", paddingTop: "10px" }}>
-                {post?.body}
-              </p>
+              <div>
+                <h5>{post?.title}</h5>
+                <p style={{ fontSize: "10px", paddingTop: "10px" }}>
+                  {post?.body}
+                </p>
+              </div>
+              <div className="homeButton">
+                <Button
+                  style={{
+                    width: "20px",
+                    height: "25px",
+                    fontSize: "10px",
+                    paddingTop: "9px",
+                  }}
+                  variant="contained"
+                  type="primary"
+                >
+                  Update
+                </Button>
+                <Button
+                  style={{
+                    width: "20px",
+                    height: "25px",
+                    fontSize: "10px",
+                    paddingTop: "9px",
+                  }}
+                  variant="contained"
+                  color="error"
+                  type="secondary"
+                >
+                  Delete
+                </Button>
+              </div>
             </div>
           );
         })}
