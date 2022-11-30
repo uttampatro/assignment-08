@@ -39,8 +39,11 @@ function Home() {
       <div className="homeBody">
         {posts.map((post) => {
           return (
-            <div  className="homeBodyContent">
-              <h6>{post?.title}</h6>
+            <div className="homeBodyContent">
+              <h5>{post?.title}</h5>
+              <p style={{ fontSize: "10px", paddingTop: "10px" }}>
+                {post?.body}
+              </p>
             </div>
           );
         })}
